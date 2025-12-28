@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Our 2025 🤍</title>
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <h1>Our 2025</h1>
+    <h1>아지 🤍 민주 </h1>
+    <p>Since August 9th</p>
+  </section>
+ 
+  <section class="countdown">
+    <h2>Counting down to our next year 🤍</h2>
+    <div id="timer">
+      <div><span id="days">00</span><small>Days</small></div>
+      <div><span id="hours">00</span><small>Hours</small></div>
+      <div><span id="minutes">00</span><small>Minutes</small></div>
+      <div><span id="seconds">00</span><small>Seconds</small></div>
+    </div>
+  </section>
+  
+  <!-- TIMELINE / STORY -->
+  <section class="section">
+    <h2>How it started</h2>
+    <p>
+      For a long time, I had really liked you for a long time. I was always curious about you and wanted to know more about you. The more I was with you, the more I realised that I really really liked you. When you were in the UK, all I thought about was you and wanted to be next to you. Texting you everyday and waiting for your reply was the best thing. 
+    </p> 
+    <p> 
+    Then when you came back to Korea, I was so happy to see you and that was when we had our first date, August 9th, 2025. I will always remember that day. Honestly, I was so nervous and shy but you were so sweet to me. If I could go back to that day, I would do it all over again and this time confidently ask you to be my girlfriend.
+    </p>
+  </section>
+
+  <!-- PHOTO GALLERY -->
+  <section class="section">
+    <h2>Moments I loved</h2>
+
+    <div class="gallery">
+      <img src="first.jpeg" alt="memory 1">
+      <img src="2nd.jpeg" alt="memory 2">
+      <img src="2ndbooth.jpeg" alt="memory 3">
+      <img src="date.jpeg" alt="memory 4">
+      <img src="matching.jpeg" alt="memory 5">
+      <img src="100days.jpeg" alt="memory 6">
+      <img src="date2.jpeg" alt="memory 7">
+      <img src="ikseon.jpeg" alt="memory 8">
+      <img src="christmas.jpeg" alt="memory 9">
+      <img src="christmas2.jpeg" alt="memory 10">
+
+      
+    </div>
+  </section>
+
+  <!-- MEMORY BLOCKS -->
+  <section class="section memories">
+    <div class="memory">
+      <h3>August</h3>
+      <p>Our first date</p>
+      <p>First time holding hands ㅋㅋㅋ</p>
+    </div>
+
+    <div class="memory">
+      <h3>September</h3>
+      <p>한강 date</p>
+
+    </div>
+    
+    <div class="memory">
+      <h3>October</h3>
+      <p>Just usual dates</p>
+
+    </div>
+    
+    <div class="memory">
+      <h3>November</h3>
+      <p>Matching outfits</p>
+      <p>100 days together</p>
+
+    </div>
+    <div class="memory">
+      <h3>December</h3>
+      <p>Studying together</p>
+      <p>Ski date</p>
+      <p>First Christmas together</p>
+    </div>
+  </section>
+
+  <!-- FINAL MESSAGE -->
+  <section class="final">
+    <h2>To 2026</h2>
+    <p>
+      2025 gave me you, and that alone makes it unforgettable.
+      Every memory, every quiet moment, every laugh we shared is something I’ll carry with me into whatever comes next.
+    </p>
+    <p>
+      I don’t know exactly what 2026 will look like, but I know what I hope for, more us, more time together, more moments that feel like home.
+    </p>
+    <p>
+      Thank you for being part of my year, my life, and my heart.
+    </p>
+    <p>
+      Happy New Year, 민주.
+    </p>
+
+    <p class="signature">— Always yours</p>
+  </section>
+
+  <script>
+    const newYear = new Date("January 1, 2026 00:00:00").getTime();
+
+    setInterval(() => {
+      const now = new Date().getTime();
+      const diff = newYear - now;
+
+      const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+      const minutes = Math.floor((diff / (1000 * 60)) % 60);
+      const seconds = Math.floor((diff / 1000) % 60);
+
+      document.getElementById("days").innerText = days;
+      document.getElementById("hours").innerText = hours;
+      document.getElementById("minutes").innerText = minutes;
+      document.getElementById("seconds").innerText = seconds;
+    }, 1000);
+  </script>
+  <section class="video-section">
+    <h2>One quiet moment</h2>
+    <p>Just us by the river.</p>
+
+    <video controls playsinline>
+      <source src="river.mp4" type="video/mp4">
+    </video>
+  </section>
+  <section class="secret">
+    <button id="revealBtn">click me 🤍</button>
+
+    <div id="loveLetter" class="hidden">
+      <h2>For you</h2>
+      <p>
+        For 민주 🤍
+      </p>
+      <p>
+        I don’t think I ever properly told you how much this year changed because of you.
+        Before August 9th, 2025 was just another year. After you, it became our year.
+      </p>
+      <p>
+        Being with you made ordinary moments feel special without trying. Sitting next to you, walking together, doing nothing, somehow all of it felt like enough. You made me feel calm in a way I didn’t know I needed, and happy in a way that didn’t feel loud, just warm and steady.
+      </p>
+      <p>
+        Thank you for every smile, every small moment, every time you leaned on me, and every time you let me be myself around you. I love the way you exist, quietly, gently, beautifully, and how you’ve become such a natural part of my life.
+      </p>
+      <p>
+        No matter what 2026 brings, I hope we keep choosing each other. I hope we keep growing, laughing, learning, and making memories that only belong to us.
+      </p>
+      <p>
+        Thank you for being you.
+      </p>
+      <p>
+        Thank you for being mine.
+      </p>
+      <p>
+      🤍
+      </p>
+    </div>
+  </section>
+  <script>
+    const btn = document.getElementById("revealBtn");
+    const letter = document.getElementById("loveLetter");
+
+    btn.addEventListener("click", () => {
+      letter.style.display = "block";
+      btn.style.display = "none";
+    });
+  </script>
+  
+</body>
+</html>
